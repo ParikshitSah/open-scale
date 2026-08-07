@@ -1,0 +1,4 @@
+# any folders that start with "build"
+build*
+
+.cache
