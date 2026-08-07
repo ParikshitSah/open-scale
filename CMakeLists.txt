@@ -5,6 +5,7 @@ include(pico_extras_import_optional.cmake)
 
 
 project(my_blink C CXX ASM)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
@@ -12,6 +13,7 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_executable(${PROJECT_NAME}
+    main.c
     my_blink.c
     )
 
